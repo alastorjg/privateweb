@@ -3,6 +3,55 @@ body
     font-size: 16px
     color: $texto-color
 
+//header
+.barMenu
+    font-size: 14px
+    a
+        color: $azul-primario
+        margin-left: 20px
+        &:nth-last-child(1)
+            margin-left: 0
+            
+    span
+        display: inline-block
+        width: 2px
+        height: 15px
+        background: $naranja-primario
+        margin: 0px 20px
+
+.dropdown2
+  position: relative
+  display: inline-block
+  color: $azul-primario
+
+.dropdown-content2
+    display: none
+    position: absolute
+    background-color: #fff
+    min-width: 105px
+    height: 35px
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2)
+    padding: 5px 0px 0px 0px
+    z-index: 1
+    text-align: center
+    border: 1px solid $azul-primario
+    border-radius: 20px
+    color: $azul-primario
+    a
+        text-decoration: none
+    &:hover
+        color: $azul-secundario
+
+.dropdown2:hover .dropdown-content2
+  display: block
+
+
+
+
+
+//fin menu
+
+
 .padXX
     padding: 50px 0px
 
