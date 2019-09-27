@@ -201,6 +201,7 @@ body {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+  z-index: 99999;
 }
 
 #cssmenu:after,
@@ -245,20 +246,19 @@ body {
 }
 
 #cssmenu > ul > li > a {
-  padding: 17px;
+  padding: 20px;
   font-size: 14px;
-  letter-spacing: 1px;
   text-decoration: none;
   color: #003087;
   font-weight: normal;
 }
 
 #cssmenu > ul > li:hover > a {
-  color: #ffffff;
+  color: #003087;
 }
 
 #cssmenu > ul > li.has-sub > a {
-  padding-right: 30px;
+  padding-right: 19px;
 }
 
 #cssmenu > ul > li.has-sub > a:after {
@@ -268,7 +268,7 @@ body {
   width: 8px;
   height: 2px;
   display: block;
-  background: #dddddd;
+  background: #ffffff;
   content: "";
 }
 
@@ -279,7 +279,7 @@ body {
   display: block;
   width: 2px;
   height: 8px;
-  background: #dddddd;
+  background: #ffffff;
   content: "";
   -webkit-transition: all 0.25s ease;
   -moz-transition: all 0.25s ease;
@@ -342,7 +342,7 @@ body {
   text-decoration: none;
   color: #dddddd;
   font-weight: 400;
-  background: #333333;
+  background: #003087;
 }
 
 #cssmenu ul ul li:last-child > a,
@@ -536,7 +536,7 @@ body {
   }
 
   #cssmenu .submenu-button.submenu-opened {
-    background: #262626;
+    background: #ffffff;
   }
 
   #cssmenu ul ul .submenu-button {
@@ -584,11 +584,32 @@ body {
     display: none;
   }
 }
+.bannerB {
+  display: block;
+  height: 760px;
+  margin-bottom: 10px;
+  max-width: 100%;
+  max-height: 100%;
+}
+
 .imgBanner {
-  background-image: linear-gradient(122.76deg, rgba(0, 156, 255, 0.34) 2.9%, rgba(36, 19, 95, 0.34) 83.89%, rgba(254, 80, 0, 0.34) 100.78%), url("/img/banner.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 514px;
+  background-image: linear-gradient(122.76deg, rgba(0, 156, 255, 0.34) 2.9%, rgba(36, 19, 95, 0.34) 83.89%, rgba(254, 80, 0, 0.34) 100.78%);
+  height: auto;
+  z-index: -1;
+  position: absolute;
+  width: 100%;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.imgBlock {
+  display: block;
+  width: 100%;
+  height: auto;
+  z-index: 9997;
+  clear: both;
+  max-width: 100%;
+  max-height: 100%;
 }
 
 #sobre.sobreIsa {
@@ -633,16 +654,9 @@ body {
   margin-bottom: 0;
 }
 
-.active {
-  border-left: 3px solid #fe5000;
-}
-
 .bandera {
-  display: block;
-  position: absolute;
-  z-index: -1px;
-  width: 100%;
-  height: auto;
+  background-image: url("../img/onda.png");
+  background-repeat: no-repeat;
 }
 
 .padSection {
@@ -838,6 +852,49 @@ body {
   text-decoration: underline;
   font-size: 12px;
   color: #4d4d4d;
+}
+
+.nav.nav-tabs {
+  float: left;
+  display: block;
+  margin-right: 20px;
+  border-bottom: 0;
+  border-right: 1px solid #ddd;
+  padding-right: 15px;
+}
+
+.nav-tabs .nav-link {
+  border: 1px solid transparent;
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+  background: #ccc;
+}
+
+.nav-tabs .nav-link.active {
+  color: #495057;
+  background-color: #007bff !important;
+  border-color: transparent !important;
+}
+
+.nav-tabs .nav-link {
+  border: 1px solid transparent;
+  border-top-left-radius: 0rem !important;
+  border-top-right-radius: 0rem !important;
+}
+
+.tab-content > .active {
+  display: block;
+  background: #007bff;
+  min-height: 165px;
+}
+
+.nav.nav-tabs {
+  float: left;
+  display: block;
+  margin-right: 20px;
+  border-bottom: 0;
+  border-right: 1px solid transparent;
+  padding-right: 15px;
 }
 
 /*# sourceMappingURL=style-rep.css.map */
