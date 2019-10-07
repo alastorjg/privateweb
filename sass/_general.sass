@@ -55,6 +55,70 @@ body
 .padXX
     padding: 50px 0px
 
+.btn-primario-noborde
+    display: block
+    //width: 100%
+    height: 40px
+    text-align: center
+    color: $azul-primario
+    padding: 0px 0px
+    font-size: 17px
+    font-weight: bold
+    span
+        margin-right: 10px
+        &:hover
+            margin-right: 32px
+            -webkit-transition: margin-right .2s .1s
+            transition: margin-right .2s .1s
+    i
+        color: $naranja-primario
+    &:hover
+        color: $azul-secundario      
+    &:active
+        border: 1px solid $naranja-primario
+        color: $azul-secundario
+        padding: 0px 10px
+        -webkit-transition: padding .1s .1s
+        transition: padding .1s .1s
+    &:focus
+        outline: 0
+        box-shadow: none
+    &:target
+        border: 1px solid $naranja-primario
+        color: $azul-secundario
+
+.btn-blanco-noborde
+    display: block
+    //width: 100%
+    height: 40px
+    text-align: center
+    color: $blanco
+    padding: 0px 0px
+    font-size: 17px
+    font-weight: bold
+    span
+        margin-right: 10px
+        &:hover
+            margin-right: 32px
+            -webkit-transition: margin-right .2s .2s
+            transition: margin-right .2s .2s
+    i
+        color: $blanco
+    &:hover
+        color: $blanco     
+    &:active
+        border: 1px solid $blanco
+        color: $blanco
+        padding: 0px 10px
+        -webkit-transition: padding .1s .1s
+        transition: padding .1s .1s
+    &:focus
+        outline: 0
+        box-shadow: none
+    &:target
+        border: 1px solid $blanco
+        color: $blanco
+
 .btn-primario
     display: block
     //width: 100%
@@ -66,6 +130,7 @@ body
     font-weight: 400
     border-radius: 50px
     border: 2px solid $azul-primario
+    margin-bottom: 10px
     &:hover
         color: $azul-secundario
     &:active
@@ -90,6 +155,7 @@ body
     background: $azul-primario
     border-radius: 50px
     border: 2px solid $azul-primario
+    margin-bottom: 10px
     &:hover
         background: $azul-secundario
         color: $blanco
@@ -167,6 +233,14 @@ body
 
 //footer
 
+.redes
+    span
+        a
+            i
+                font-size: 30px
+                margin-right: 30px
+                color: $azul-primario
+
 .pie
     display: flex
     align-items: center
@@ -174,8 +248,17 @@ body
     height: 60px
     background: linear-gradient(166.01deg, #009CFF 10.94%, #24135F 76.04%, #FE5000 97.92%), $azul-primario
 
+.nav-link
+    display: block
+    padding: 0px 15px
+
 .nav-pie
     font-size: 10px !important
     color: $blanco !important
+    border-right: 1px solid #fff
+
+.border-right-none
+    border-right: none
+
                 
     
