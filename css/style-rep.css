@@ -106,6 +106,11 @@ body {
   font-size: 17px;
   font-weight: bold;
 }
+@media screen and (max-width: 500px) {
+  .btn-blanco-noborde {
+    font-size: 13px;
+  }
+}
 .btn-blanco-noborde span {
   margin-right: 10px;
 }
@@ -584,13 +589,109 @@ body {
   }
 }
 
-#itemCarou img {
-  display: block;
+.slick-slide {
+  margin: 0 20px 0 20px;
 }
-#itemCarou .informacion {
-  display: block;
+
+.slider-center_item {
   position: relative;
-  background: linear-gradient(122.76deg, rgba(0, 156, 255, 0.34) 2.9%, rgba(36, 19, 95, 0.34) 83.89%, rgba(254, 80, 0, 0.34) 100.78%), #003087;
+  width: 100%;
+  height: auto;
+  background: rgba(0, 0, 0, 0.1);
+  transition: 1s;
+}
+@media screen and (max-width: 500px) {
+  .slider-center_item {
+    height: 270px;
+  }
+}
+
+.slick-center .slider-center_item {
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.bloqueazul {
+  background: blue;
+  position: absolute;
+  width: 600px;
+  height: 300px;
+  right: 21px;
+  bottom: 25px;
+  color: #ffffff;
+  border-radius: 40px;
+  padding: 50px 40px;
+  background: linear-gradient(104.7deg, #009cff 8.94%, #24135f 95.04%, rgba(254, 80, 0, 0.5) 100%);
+}
+@media screen and (max-width: 500px) {
+  .bloqueazul {
+    width: 350px;
+    height: 200px;
+    padding: 20px 25px;
+    bottom: 10px;
+    right: 10px;
+  }
+}
+.bloqueazul .botoncarousel {
+  display: block;
+  font-size: 14px;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+@media screen and (max-width: 500px) {
+  .bloqueazul .botoncarousel {
+    font-size: 12px;
+    margin-bottom: 5px;
+  }
+}
+.bloqueazul h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+@media screen and (max-width: 500px) {
+  .bloqueazul h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+}
+.bloqueazul p {
+  font-size: 16px;
+}
+@media screen and (max-width: 500px) {
+  .bloqueazul p {
+    font-size: 12px;
+    margin-bottom: 5px;
+  }
+}
+
+.paginator-center {
+  position: relative;
+  float: right;
+  margin-bottom: 20px;
+}
+.paginator-center li {
+  margin-top: 20px;
+  position: relative;
+  float: left;
+}
+.paginator-center .prev {
+  display: block;
+  height: 24px;
+  width: 24px;
+  margin-right: 70px;
+  background: url("../img/back.png") no-repeat;
+}
+.paginator-center .next {
+  display: block;
+  height: 24px;
+  width: 24px;
+  background: url("../img/netx.png") no-repeat;
+}
+
+.container-arrow {
+  display: block;
+  width: 90%;
+  max-width: 1371px;
 }
 
 .txtNoticia {
