@@ -1,11 +1,10 @@
 .bandera
-    background-image: url('../img/onda.png') 
-    background-repeat: no-repeat
-    // display: block
-    // position: absolute
-    // z-index: -1px
-    // width: 100%
-    // height: auto
+    position: relative
+    img
+        position: absolute
+        @media screen and (max-width: 500px)
+            width: 50%
+   
 
 // #grupoisa .container
 //     height: 600px
@@ -108,13 +107,16 @@
     @media screen and (max-width: 500px)
         width: 100%
 
-.imgBannerGrupo img
-    display: block
-    width: 100%
+.imgBannerGrupo
     position: relative
-    clear: both
-    @media screen and (max-width: 500px)
-        height: 300px
-        max-height: 350px
+    img
+        display: block
+        width: 100%
+        position: absolute
+        clear: both
+        @media screen and (max-width: 500px)
+            height: 300px
+            max-height: 350px
     
-    
+.mt-50
+    margin-top: 100px
