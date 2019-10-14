@@ -28,21 +28,7 @@
         font-size: 17px
         text-decoration: none
 
-.texto-banner
-    position: absolute
-    top: 223px
-    width: 608px
-    color: #fff
-    @media screen and (max-width: 500px)
-        width: 90%
-    h2
-        font-weight: bold
-        font-size: 36px
-    p
-        font-weight: 300
-        font-size: 20px
-        @media screen and (max-width: 500px)
-            font-size: 15px
+
 
 .circlegrupoisa img
     display: block
@@ -72,7 +58,7 @@
 .bg-degradado-azul
     background: linear-gradient(142.23deg, #009CFF -7.39%, #24135F 87.09%)
     border-radius: 31px
-    padding: 70px 50px
+    padding: 70px 30px
     color: #ffffff
     @media screen and (max-width: 500px)
         margin-bottom: 10px
@@ -91,6 +77,8 @@
 
 .procesoCurso
     padding: 50px 0px 0px 0px
+    @media screen and (max-width: 1024px)
+        padding: 0px 15px 0px 15px
     @media screen and (max-width: 500px)
         padding: 50px 15px 0px 15px
     h3
@@ -98,25 +86,64 @@
         font-weight: bold
         font-size: 20px
         margin-bottom: 20px
+        @media screen and (max-width: 1024px)
+            margin-bottom: 10px
     p
         font-weight: 300
         font-size: 16px
         margin-bottom: 30px
+        @media screen and (max-width: 1024px)
+            margin-bottom: 5px
+            font-size: 15px
 
 .procesoImg img
+    width: 100%
     @media screen and (max-width: 500px)
         width: 100%
 
 .imgBannerGrupo
+    background-image: url('../img/bannergrupoisa.png')
+    background-repeat: no-repeat
+    width: 100%
+    height: 610px
+    background-size: cover
     position: relative
-    img
-        display: block
-        width: 100%
+    //img
+        //display: block
+        //width: 100%
+        //position: absolute
+        //clear: both
+        //@media screen and (max-width: 500px)
+            //height: 300px
+            //max-height: 350px
+    .texto-banner
         position: absolute
-        clear: both
+        top: 84px
+        width: 608px
+        color: #fff
         @media screen and (max-width: 500px)
-            height: 300px
-            max-height: 350px
+            width: 85%
+        h2
+            font-weight: bold
+            font-size: 36px
+        p
+            font-weight: 300
+            font-size: 20px
+            @media screen and (max-width: 500px)
+                font-size: 17px
+                text-align: justify
     
 .mt-50
     margin-top: 100px
+
+.onda2
+    background: url(../img/onda2.png)
+    background-repeat: no-repeat
+    width: 244px
+    height: 800px
+    position: absolute
+    right: 0
+    top: 1400px
+    @media screen and (max-width: 500px)
+        display: none
+

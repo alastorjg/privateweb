@@ -582,31 +582,6 @@ body {
   text-decoration: none;
 }
 
-.texto-banner {
-  position: absolute;
-  top: 223px;
-  width: 608px;
-  color: #fff;
-}
-@media screen and (max-width: 500px) {
-  .texto-banner {
-    width: 90%;
-  }
-}
-.texto-banner h2 {
-  font-weight: bold;
-  font-size: 36px;
-}
-.texto-banner p {
-  font-weight: 300;
-  font-size: 20px;
-}
-@media screen and (max-width: 500px) {
-  .texto-banner p {
-    font-size: 15px;
-  }
-}
-
 .circlegrupoisa img {
   display: block;
   width: 100%;
@@ -644,7 +619,7 @@ body {
 .bg-degradado-azul {
   background: linear-gradient(142.23deg, #009CFF -7.39%, #24135F 87.09%);
   border-radius: 31px;
-  padding: 70px 50px;
+  padding: 70px 30px;
   color: #ffffff;
 }
 @media screen and (max-width: 500px) {
@@ -671,6 +646,11 @@ body {
 .procesoCurso {
   padding: 50px 0px 0px 0px;
 }
+@media screen and (max-width: 1024px) {
+  .procesoCurso {
+    padding: 0px 15px 0px 15px;
+  }
+}
 @media screen and (max-width: 500px) {
   .procesoCurso {
     padding: 50px 15px 0px 15px;
@@ -682,12 +662,26 @@ body {
   font-size: 20px;
   margin-bottom: 20px;
 }
+@media screen and (max-width: 1024px) {
+  .procesoCurso h3 {
+    margin-bottom: 10px;
+  }
+}
 .procesoCurso p {
   font-weight: 300;
   font-size: 16px;
   margin-bottom: 30px;
 }
+@media screen and (max-width: 1024px) {
+  .procesoCurso p {
+    margin-bottom: 5px;
+    font-size: 15px;
+  }
+}
 
+.procesoImg img {
+  width: 100%;
+}
 @media screen and (max-width: 500px) {
   .procesoImg img {
     width: 100%;
@@ -695,23 +689,56 @@ body {
 }
 
 .imgBannerGrupo {
+  background-image: url("../img/bannergrupoisa.png");
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 610px;
+  background-size: cover;
   position: relative;
 }
-.imgBannerGrupo img {
-  display: block;
-  width: 100%;
-  position: relative;
-  clear: both;
+.imgBannerGrupo .texto-banner {
+  position: absolute;
+  top: 84px;
+  width: 608px;
+  color: #fff;
 }
 @media screen and (max-width: 500px) {
-  .imgBannerGrupo img {
-    height: 300px;
-    max-height: 350px;
+  .imgBannerGrupo .texto-banner {
+    width: 85%;
+  }
+}
+.imgBannerGrupo .texto-banner h2 {
+  font-weight: bold;
+  font-size: 36px;
+}
+.imgBannerGrupo .texto-banner p {
+  font-weight: 300;
+  font-size: 20px;
+}
+@media screen and (max-width: 500px) {
+  .imgBannerGrupo .texto-banner p {
+    font-size: 17px;
+    text-align: justify;
   }
 }
 
 .mt-50 {
   margin-top: 100px;
+}
+
+.onda2 {
+  background: url(../img/onda2.png);
+  background-repeat: no-repeat;
+  width: 244px;
+  height: 800px;
+  position: absolute;
+  right: 0;
+  top: 1400px;
+}
+@media screen and (max-width: 500px) {
+  .onda2 {
+    display: none;
+  }
 }
 
 .slick-slide {
