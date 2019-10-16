@@ -1126,6 +1126,46 @@ body {
   }
 }
 
+.banner2 {
+  position: relative;
+  background: url("../img/eticaempresarial.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 289px;
+}
+.banner2 .texto1 {
+  width: 550px;
+  position: absolute;
+  top: 90px;
+}
+@media screen and (max-width: 500px) {
+  .banner2 .texto1 {
+    width: 310px;
+    left: 30px;
+  }
+}
+.banner2 .texto1 h2 {
+  color: #003087;
+  font-weight: bold;
+  font-size: 26px;
+  margin-bottom: 40px;
+}
+@media screen and (max-width: 500px) {
+  .banner2 .texto1 h2 {
+    text-align: center;
+  }
+}
+.banner2 .texto1 p {
+  font-size: 17px;
+  font-weight: 400;
+}
+@media screen and (max-width: 500px) {
+  .banner2 .texto1 p {
+    text-align: center;
+  }
+}
+
 .breadcrumb {
   background: #fff;
   padding: 0;
@@ -1439,6 +1479,74 @@ body {
 
 .bordeContacto {
   border-top: 1px solid #dadada;
+}
+
+.e-1 h4 {
+  font-weight: bold;
+  color: #003087;
+  font-size: 24px;
+  margin-bottom: 25px;
+}
+.e-1 p {
+  font-size: 16px;
+  font-weight: 400;
+}
+.e-1 img {
+  display: block;
+  width: 547px;
+  height: 461;
+  margin: 50px auto;
+}
+
+.e-2 h4 {
+  font-weight: bold;
+  color: #003087;
+  font-size: 24px;
+  margin-bottom: 25px;
+}
+.e-2 p {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.bg-e {
+  background: #f8f8f8;
+  padding: 25px;
+  border-radius: 30px;
+}
+.bg-e h4 {
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: #fe5000;
+}
+.bg-e p {
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+.bg-e .ball {
+  margin-bottom: 15px;
+}
+.bg-e .ball span {
+  display: flex;
+  flex: none;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  background: #fe5000;
+  color: #ffffff;
+  font-weight: bold;
+  border-radius: 50%;
+  font-size: 16px;
+  padding: 3px;
+  text-align: center;
+  margin-right: 10px;
+}
+.bg-e .ball .balltxt b {
+  font-weight: bold;
+  color: #003087;
+  margin-right: 5px;
 }
 
 /*# sourceMappingURL=style-rep.css.map */
