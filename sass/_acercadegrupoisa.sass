@@ -365,8 +365,12 @@
     img
         display: block
         width: 547px
-        height: 461
+        height: 461px
         margin: 50px auto
+        @media screen and ( max-width: 500px)
+            width: 100%
+            height: auto
+            
 
 .e-2
     h4
@@ -378,10 +382,62 @@
         font-size: 16px
         font-weight: 400
 
+.e-3
+    h2 
+        color: $azul-primario
+        font-weight: bold
+        font-size: 24px
+        margin-bottom: 22px
+    span
+        font-weight: bold
+        color: $naranja-primario
+        font-size: 20px
+        margin-bottom: 35px
+
+.e-4
+    h3
+        font-weight: bold
+        color: $azul-primario
+        margin-bottom: 30px
+        font-size: 24px
+    p
+        margin-bottom: 50px
+
+.e-5
+    h3
+        font-weight: bold
+        color: $azul-primario
+        margin-bottom: 28px
+    p 
+        margin-bottom: 50px
+
+.e-6
+    h4
+        font-weight: bold
+        color: $azul-primario
+        margin-bottom: 22px
+        font-size: 20px
+    p
+        font-weight: 400
+        margin-bottom: 50px
+    
+
+
+
+.imgetica
+    img
+        width: 100%
+        height: auto
+        @media screen and ( max-width: 1024px  )
+            width: 100%
+            height: auto
+        
+
 .bg-e
     background: $plomo-secundario
     padding: 25px
     border-radius: 30px
+    margin-bottom: 40px
     h4
         font-weight: bold
         font-size: 20px
@@ -413,24 +469,39 @@
                 color: $azul-primario
                 margin-right: 5px
 
-    // ul
-    //     list-style: none
-    //     padding-inline-start: 0px
-    //     li
-    //         span
-    //             display: inline-block
-    //             width: 30px
-    //             height: 30px
-    //             background: $naranja-primario
-    //             color: $blanco
-    //             font-weight: bold
-    //             border-radius: 50%
-    //             font-size: 16px
-    //             padding: 3px
-    //             text-align: center
-    //             margin-right: 10px
-    //         .inline
-    //             display: inline-block
-    //             b
-    //                 font-weight: bold
-    //                 color: $azul-primario
+.revisar
+    a
+        font-weight: bold
+        font-size: 16px
+        display: block
+        color: $naranja-primario
+        margin-bottom: 70px
+
+.bg-celeste
+    background: $celeste-secundario
+    padding: 20px 40px
+    border-radius: 30px
+    margin-bottom: 50px
+    .interno
+        span
+            display: block
+            width: 48px
+            height: 48px
+            background: $blanco
+            border-radius: 50px
+            padding: 5px
+            margin: auto
+            margin-top: 40px
+            margin-bottom: 40px
+            font-size: 24px
+            font-weight: bold
+            text-align: center
+            
+            color: $celeste-secundario
+
+        p
+            color: $blanco
+            font-weight: 300
+            font-size: 16px
+    .bordeInterno
+        border-right: 1px solid $azul-primario 

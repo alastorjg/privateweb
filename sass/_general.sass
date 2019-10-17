@@ -264,3 +264,20 @@ body
 
                 
     
+//tabla
+.table 
+    color: $azul-primario
+    thead
+        th
+            border-bottom: 2px solid $azul-primario
+            border-top: 1px solid $blanco
+            font-size: 14px
+    tbody
+        td
+            border-top: 1px solid $blanco
+            font-size: 14px
+            color: $texto-color
+            padding: .85rem
+
+.table-striped tbody tr:nth-of-type(odd)
+    background-color: rgba(0,0,0,.03)
